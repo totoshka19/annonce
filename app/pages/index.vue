@@ -1,8 +1,12 @@
 <template>
   <div class="container mx-auto">
-    <Profile />
+    <div class="my-8 border-b border-gray-200"></div>
+    <Filter @change="handleFilterChange" />
   </div>
-  <div class="mt-8 border-b border-gray-200"></div>
 </template>
-<script setup lang="ts">
+
+<script setup>
+const handleFilterChange = (selectedValue) => {
+  console.log('На странице было выбрано новое значение:', selectedValue);
+};
 </script>
