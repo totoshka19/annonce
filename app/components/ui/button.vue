@@ -26,7 +26,8 @@ const buttonClasses = computed(() => {
   const variants = {
     default: 'space-x-2 bg-gray-200/70 hover:bg-gray-300/70 px-4 py-2 rounded-full text-gray-700',
     tab: `${tabBase} ${props.active ? tabActive : ''}`,
-    primary: 'font-semibold bg-primary hover:bg-primary-dark text-white rounded-xl h-14 py-4 px-5'
+    primary: 'font-semibold bg-primary hover:bg-primary-dark text-white rounded-xl h-14 py-4 px-5',
+    promote: 'bg-primary hover:bg-primary-dark text-white rounded-lg px-6 py-2 font-semibold'
   };
 
   return `${baseClasses} ${variants[props.variant] || variants.default}`;

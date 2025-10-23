@@ -18,6 +18,9 @@ export default defineNuxtConfig({
               dark: '#2B6055'
             },
             content: '#0F0F0F'
+          },
+          screens: {
+            '3xl': '1746px',
           }
         }
       }
