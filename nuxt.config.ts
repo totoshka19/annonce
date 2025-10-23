@@ -7,5 +7,20 @@ export default defineNuxtConfig({
   ],
   css: [
     '~/assets/css/tailwind.css'
-  ]
+  ],
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#337566',
+              dark: '#2B6055'
+            },
+            content: '#0F0F0F'
+          }
+        }
+      }
+    }
+  }
 })

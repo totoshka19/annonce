@@ -14,7 +14,7 @@
           <span>Ростов-на-Дону</span>
         </a>
         <div class="border-l border-gray-300 h-6"></div>
-        <a href="#" class="text-teal-600 hover:underline">Разместить объявление</a>
+        <a href="#" class="text-primary hover:underline">Разместить объявление</a>
         <UiButton
             padding-class="pl-3 pr-2 py-1.5"
             space-class="space-x-3"
