@@ -1,10 +1,20 @@
-# Nuxt Minimal Starter
+# Annoncé — Витрина компании
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Это веб-приложение представляет собой страницу-профиль компании с каталогом товаров и услуг.
 
-## Setup
+## Технологический стек
 
-Make sure to install dependencies:
+*   **Фреймворк:** [Nuxt.js 4](https://nuxt.com/)
+*   **UI-библиотека:** [Vue.js 3](https://vuejs.org/)
+*   **Стилизация:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Сервер (для API):** [Nitro](https://nitro.unjs.io/) (встроен в Nuxt)
+*   **Сборка:** [Vite](https://vitejs.dev/)
+
+## Запуск проекта
+
+### 1. Установка зависимостей
+
+Убедитесь, что у вас установлен Node.js (версия 18+), затем выполните команду:
 
 ```bash
 # npm
@@ -15,14 +25,11 @@ pnpm install
 
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### 2. Запуск сервера для разработки
 
-Start the development server on `http://localhost:3000`:
+Приложение будет доступно по адресу `http://localhost:3000`.
 
 ```bash
 # npm
@@ -33,43 +40,4 @@ pnpm dev
 
 # yarn
 yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

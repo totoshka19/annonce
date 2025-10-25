@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mx-auto px-4 pt-8">
+    <div class="container mx-auto px-4">
       <Suspense>
         <template #default>
           <Profile
