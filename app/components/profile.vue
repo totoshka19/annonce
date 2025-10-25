@@ -4,19 +4,11 @@
       <img src="~/assets/images/logo.png" alt="Логотип компании Наследие" class="w-120 h-120">
     </div>
     <h2 class="text-2xl font-semibold text-content">{{ profile.companyName }}</h2>
-    <div class="flex items-center space-x-3 text-content text-sm">
-      <span v-if="profile.isVerified" class="flex items-center">
-        <IconsVerified class="w-4 h-4 text-primary mr-1.5" />
-        Документы проверены
-      </span>
-      <span>&bull;</span>
-      <span class="flex items-center">
-        <IconsStar class="w-4 h-4 text-primary mr-1" />
-        {{ profile.rating }}
-      </span>
-      <span>&bull;</span>
-      <span>{{ profile.reviews }} отзывов</span>
-    </div>
+    <EntityStats
+        :is-verified="profile.isVerified"
+        :rating="profile.rating"
+        :reviews="profile.reviews"
+    />
     <UiButton variant="primary">
       Показать номер телефона
     </UiButton>
