@@ -15,7 +15,7 @@
     </div>
     <div class="flex flex-col flex-grow mt-2">
       <div>
-        <p class="text-xl text-content mb-1">{{ item.price }}</p>
+        <p class="text-xl text-content mb-1">{{ formatPrice(item.price) }}</p>
         <p class="text-content mb-1">{{ item.title }}</p>
       </div>
       <div class="mt-auto border-t border-gray-200 pt-2 mt-2">
@@ -25,10 +25,10 @@
             Продвигать
           </UiButton>
         </div>
-        <div v-else-if="item.status === 'promoted'" class="text-primary text-center flex items-center justify-center h-10">
+        <div v-else-if="item.status === 'promoted'" class="text-primary text-center flex items-center justify-center h-12">
           Объявление продвигается
         </div>
-        <div v-else-if="item.status === 'hidden'" class="text-red-500 text-center flex items-center justify-center h-10">
+        <div v-else-if="item.status === 'hidden'" class="text-red-500 text-center flex items-center justify-center h-12">
           Объявление скрыто
         </div>
       </div>
@@ -43,8 +43,4 @@ defineProps({
     required: true
   }
 });
-
-const formatPrice = (price) => {
-  return new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: 0 }).format(price);
-};
 </script>
